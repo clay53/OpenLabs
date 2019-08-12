@@ -1,0 +1,24 @@
+{
+  "name": "openlabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaytonDoesThings/OpenLabs.git"
+  },
+  "author": "Clayton Hickey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaytonDoesThings/OpenLabs/issues"
+  },
+  "homepage": "https://github.com/ClaytonDoesThings/OpenLabs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "graphql-request": "^1.8.2"
+  }
+}
