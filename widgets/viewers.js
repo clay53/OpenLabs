@@ -74,7 +74,7 @@ module.exports = {
                     }
                </script>`,
                `<div style="text-align: center;">
-                    <img id="logo" src="/resources/dlive-icon.png" style="float: left;"/><span id="viewers" style="color: ${req.query.textColor || "#F8BF00"}; font-family: monospace; text-shadow: 4px 4px 8px black;">20</span>
+                    <img id="logo" src="/resources/dlive-icon.png" style="float: left;"/><span id="viewers" style="color: ${req.query.textColor || "#F8BF00"}; font-family: monospace; text-shadow: 4px 4px 32px black;">20</span>
                </div>`,
                "",
                `onload="load()" style="margin: 0;"`
