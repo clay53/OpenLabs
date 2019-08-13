@@ -11,6 +11,7 @@ An open-source alternative for streaming utilities such as live chat and Discord
 4. `cd ./OpenLabs`
 5. `npm install`
 6. `node ./index.js`
+7. If no errors occur, it should be live @`localhost:8080`
 
 # Dependencies
 ```
