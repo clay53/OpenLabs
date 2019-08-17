@@ -65,7 +65,7 @@ module.exports = {
                         setInterval(updateFollowers, 5000);
                     }
                 </script>`,
-                `<div id="followersContainer" style="border-radius: ${req.query.borderRadius || "50%"}; background-color: ${req.query.bgColor || "#F8BF00"}; text-align: center">
+                `<div id="followersContainer" style="border-radius: ${req.query.borderRadius || "50%"}; background-color: ${req.query.bgColor || "#FFD300"}; text-align: center">
                     <span id="followers" style="color: ${req.query.textColor || "white"}; font-family: monospace;">0</span>
                 </div>`,
                 "",

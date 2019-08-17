@@ -1,7 +1,7 @@
 module.exports = {
-    shortenNumber: function (num) {
+    shortenNumber: function (num, lowDecimals=false) {
         return (num < 1000 ?
-            num.toString() :
+            (lowDecimals ? num.toFixed(1) : num).toString() :
             (num < 10000 ?
                 (num/1000).toFixed(2) + "k" :
                 (num < 100000 ?

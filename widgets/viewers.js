@@ -56,7 +56,6 @@ module.exports = {
                         updateSize();
                         fetch("/api/viewers?user=${req.query.user}").then((response) => {
                             response.json().then((data) => {
-                                console.log(data);
                                 let viewersElem = document.getElementById("viewers");
                                 let text = data.text;
                                 viewersElem.innerText = text;
@@ -74,7 +73,7 @@ module.exports = {
                     }
                </script>`,
                `<div style="text-align: center;">
-                    <img id="logo" src="/resources/dlive-icon.png" style="float: left;"/><span id="viewers" style="color: ${req.query.textColor || "#F8BF00"}; font-family: monospace; text-shadow: 4px 4px 32px black;">20</span>
+                    <img id="logo" src="/resources/dlive-icon.png" style="float: left;"/><span id="viewers" style="color: ${req.query.textColor || "#FFD300"}; font-family: monospace; text-shadow: 4px 4px 32px black;">-1</span>
                </div>`,
                "",
                `onload="load()" style="margin: 0;"`
