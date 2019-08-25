@@ -25,10 +25,15 @@ module.exports = {
                     text: f.shortenNumber(count)
                 })
             }).catch((err) => {
-                res.send({
-                    count: 0,
-                    text: "Offline"
-                })
+                if (JSON.stringify(err) === "{}") {
+                    res.send({
+                        count: 0,
+                        text: "Offline"
+                    })
+                } else {
+                    console.log(err);
+                    res.status(500).send("Internal Server Error.");
+                }
             });
         } else {
             res.status(404).send("User parameter not found");

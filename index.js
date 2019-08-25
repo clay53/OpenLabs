@@ -23,6 +23,10 @@ const dliveChest = require('./widgets/dliveChest.js');
 app.get('/api/dliveChest', dliveChest.dliveChestAPI);
 app.get('/widgets/dliveChest', dliveChest.dliveChestWidget);
 
+const osuPPVersus = require('./widgets/osuPPVersus.js');
+app.get('/api/osuUserPP', osuPPVersus.osuUserPPAPI);
+app.get('/widgets/osuPPVersus', osuPPVersus.osuPPVersusWidget);
+
 app.listen(port, () => {
     console.log(`Listening on port ${port}!`);
 });
